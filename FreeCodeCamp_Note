@@ -1,0 +1,36 @@
+FCC Record: by Rhonin Hai Li from 2018-12-02
+
+1. 标题h1，副标题h2，段落p
+2. 注释<!-- -->
+3. html中改变字体颜色，在节点中添加style="color:blue"。css (<style>标签)中直接写元素种类h1，或者定义了class在元素中，在css可以用.class。xxx {color: blue;}
+	color, 
+	font-size, 
+	font-family (a. 还可以引入网络字体，用link标签先引入，然后在css中使用. b. 字体降级，如果第一个字体不可用则自动降级为第二个字体，font-family: a1, a2;)
+	width, 元素宽度，用像素点px
+	边框：
+		border-color
+		border-width
+		border-style: solid固定的
+		border-radius，边框半径px or x%
+4. img 是自关闭标签，不需要结束标签，图片源用src="/images/relaxing-cat.jpg"
+5. 一个元素可以有多个class，用空格隔开class="classA classB"
+6. a元素，也叫anchor（锚点）元素<a href="address">text</a>，a元素也可以嵌套在其他元素中间，如p
+	# 为固定连接，在不确定地址的情况下
+7. alt属性，也被称为alt text, 是当图片无法加载时显示的替代文本。alt属性对于盲人或视觉损伤的用户理解一幅图片中所描绘的内容非常重要，搜索引擎也会搜索alt属性。简而言之，每一张图片都应该有一个alt属性！
+8. unordered lists（无序列表）, 或带项目符号的列表<ul><li>xxx</li></ul>
+9. rdered lists（有序列表）, 或数字编号列表<ol><li>xxx</li></ol>
+10. <input type="text">文本输入框，自关闭标签
+11. placeholder占位符，在input(输入)框输入任何东西之前放置在input(输入)框中的预定义文本
+12. 跟服务器交互的Web表单(form)，通过给你的form元素添加一个action属性来达到此目的,action属性的值指定了表单提交到服务器的地址, <form action="/url-where-you-want-to-submit-form-data">xxx or <xxx></xxx> </form>
+13. button，<button type="submit">Submit</button>，可在form中添加button
+14. required属性，为必填项目，否则无法提交。<input type="text" required>
+
+
+
+
+
+
+
+
+
+

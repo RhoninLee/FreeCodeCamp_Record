@@ -42,7 +42,8 @@ FCC Record: by Rhonin Hai Li from 2018-12-02
 17. div元素，也被称作division(层)元素，是一个盛装其他元素的通用容器。所以可以利用CSS的继承关系把div上的CSS传递给它所有子元素。
 18. id 属性应该是唯一的，虽然浏览器并不强制唯一，但基于最佳实践，这一点是被广泛认可的，所以请不要给一个以上的元素设置相同的 id 属性。
 19. 有三个影响HTML元素布局的重要属性：padding(内边距)、margin(外边距)、border(边框)。元素的 padding 控制元素内容 content和元素边框 border 之间的距离。元素的外边距 margin 控制元素边框 border 和元素实际所占空间的距离。margin负值，填满外空间
-
+	padding: 10px 20px 10px 20px; 上右下左，顺时针clockwise
+	margin is the same，还有跟其他元素的边距
 
 
 

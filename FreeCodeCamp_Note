@@ -1,5 +1,7 @@
 FCC Record: by Rhonin Hai Li from 2018-12-02
 
+
+*Session* 1: HTML5 & CSS: 
 1. 标题h1，副标题h2，段落p
 2. 注释<!-- -->
 3. html中改变字体颜色，在节点中添加style="color:blue"。css (<style>标签)中直接写元素种类h1，或者定义了class在元素中，在css可以用.class。xxx {color: blue;}, ID选择器#ID
@@ -44,6 +46,33 @@ FCC Record: by Rhonin Hai Li from 2018-12-02
 19. 有三个影响HTML元素布局的重要属性：padding(内边距)、margin(外边距)、border(边框)。元素的 padding 控制元素内容 content和元素边框 border 之间的距离。元素的外边距 margin 控制元素边框 border 和元素实际所占空间的距离。margin负值，填满外空间
 	padding: 10px 20px 10px 20px; 上右下左，顺时针clockwise
 	margin is the same，还有跟其他元素的边距
+20. 每一个 HTML 页面都有一个 body 元素，默认存在.你可以像对其他 HTML 元素一样对你的 body 元素应用样式，并且所有其他元素将继承你的 body 元素的样式
+21. css优先级，body几乎作为全局的样式，优先级低，单独对元素的样式设置将覆盖body中设置的样式
+	body {
+		background-color: black;
+		font-family: Monospace;
+		color: green;
+  	}
+  	.pink-text {
+    	color: pink;
+  	}
+22. 对于同一个元素，多个css设置，浏览器读取 CSS 的顺序是从上到下，这意味着，在发生冲突时，浏览器会使用最后的 CSS 声明。
+23. id 属性的CSS总是具有更高的优先级。
+24. 内联样式有更高的优先级<h1 style="color: green">
+25. color: pink !important; CSS中“!important”关键字拥有最高优先级
+26. 在 CSS 中，我们可以使用 6 位十六进制数字来表示颜色，每 2 位分别表示红色 (R)、绿色 (G) 和蓝色 (B) 成分rgb。例如，#000000 是黑色. 红，hex code 是 #FF0000 ，可被缩写成 #F00。也就是说，一位表示红，一位表示绿，一位表示蓝
+27. 在 CSS 中表示颜色的另一个方法是使用 rgb 值。代表黑色的 RGB 值看起来是：rgb(0, 0, 0) 白色rgb(255, 255, 255)
+
+
+*Session* 2: Resposive Design with Bootstrap
+1. Bootstrap将会根据你的屏幕的大小来调整HTML元素的大小 —— 强调 响应式设计的概念。通过响应式设计，你无需再为你的网站设计一个手机版的。它在任何尺寸的屏幕上看起来都会不错。
+你仅需要通过添加下列代码到你的HTML开头来将Bootstrap添加到任意应用中：
+<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+把所有的HTML内容放在class为container-fluid的div
+2. 
+
+
+
 
 
 

@@ -69,7 +69,16 @@ FCC Record: by Rhonin Hai Li from 2018-12-02
 你仅需要通过添加下列代码到你的HTML开头来将Bootstrap添加到任意应用中：
 <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
 把所有的HTML内容放在class为container-fluid的div
-2. 
+2. 响应式设计：element's class
+	text-center: 文字居中
+	img-responsive： 图片自适应
+	btn： bootstrap的button样式，行内元素inline button element （与button中的文字等宽）
+	btn btn-block: 将button变成块级元素， block-level button element （伸展并填满页面整个水平空间，任何在它之下的元素都会跟着浮动至该区块的下一行）
+	btn btn-block btn-primary: 应用的主要颜色，被用在那些用户主要采取的操作上, 深蓝色
+	
+
+
+
 
 
 

@@ -65,20 +65,31 @@ FCC Record: by Rhonin Hai Li from 2018-12-02
 
 
 *Session* 2: Resposive Design with Bootstrap
+http://www.bootcss.com/
 1. Bootstrap将会根据你的屏幕的大小来调整HTML元素的大小 —— 强调 响应式设计的概念。通过响应式设计，你无需再为你的网站设计一个手机版的。它在任何尺寸的屏幕上看起来都会不错。
 你仅需要通过添加下列代码到你的HTML开头来将Bootstrap添加到任意应用中：
 <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
 把所有的HTML内容放在class为container-fluid的div
 2. 响应式设计：element's class
 	text-center: 文字居中
+	text-primary:
+	text-danger：
 	img-responsive： 图片自适应
 	btn： bootstrap的button样式，行内元素inline button element （与button中的文字等宽）
 	btn btn-block: 将button变成块级元素， block-level button element （伸展并填满页面整个水平空间，任何在它之下的元素都会跟着浮动至该区块的下一行）
 	btn btn-block btn-primary: 应用的主要颜色，被用在那些用户主要采取的操作上, 深蓝色
-	
-
-
-
+	btn btn-block btn-info: 浅蓝色 btn-info 被用在那些用户可能会采取的操作上。
+	btn btn-block btn-danger: 红色btn-danger被用来提醒用户该操作具有“破坏性”，例如删除一张猫的图片。
+3. 可轻松实现将多个元素放入一行并指定各个元素的相对宽度的需求。Bootstrap 中大多数的class属性都可以设置于 div 元素中。
+	col-md-* 正被使用。在这里，md 表示 medium (中等的)，* 代表一个数字，它指定了这个元素所占的列宽。通过此图表的属性设置可知，在中等大小的屏幕上(例如笔记本电脑)，元素的列宽被指定了。
+	在我们创建的 Cat Photo App 中，将会使用 col-xs-* ，其中 xs 是 extra small 缩写（应用于较小的屏幕，比如手机屏幕），* 是你需要填写的数字，代表在一行中,各个元素应该占的列宽。
+	把 Like, Info 和 Delete 三个按钮一并放入一个 <div class="row"> 元素中；然后，其中的每一个按钮都需要各自被一个 <div class="col-xs-4"> 元素包裹。
+4. 通过使用 span 元素，你可以把几个元素放在一起。你甚至可以用此为一个元素的不同部分指定样式。"Top 3 things cats hate" 中把hate变为红色，元素的写法如下：
+	<p>Top 3 things cats <span class = "text-danger">hate:</span></p>
+	将同一个行内inline元素中的一部分分别设置不同的样式
+5. Font Awesome 图标库http://fontawesome.dashgame.com/
+	<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css"/>
+	i元素指代图标<xxx>xxx<i class="fa fa-thumbs-up"></i></aaa>, 图标到font awesome找
 
 
 

@@ -80,7 +80,7 @@ http://www.bootcss.com/
 	btn btn-block btn-primary: 应用的主要颜色，被用在那些用户主要采取的操作上, 深蓝色
 	btn btn-block btn-info: 浅蓝色 btn-info 被用在那些用户可能会采取的操作上。
 	btn btn-block btn-danger: 红色btn-danger被用来提醒用户该操作具有“破坏性”，例如删除一张猫的图片。
-	btn btn-default: 默认button样式
+	btn btn-default: 默认button样式,白色的
 3. bootstrap 12格网格，12列，col-md-*,x*代表占的格子数，可轻松实现将多个元素放入一行并指定各个元素的相对宽度的需求。Bootstrap 中大多数的class属性都可以设置于 div 元素中。
 	col-md-* 正被使用。在这里，md 表示 medium (中等的)，* 代表一个数字，它指定了这个元素所占的列宽。通过此图表的属性设置可知，在中等大小的屏幕上(例如笔记本电脑)，元素的列宽被指定了。
 	在我们创建的 Cat Photo App 中，将会使用 col-xs-* ，其中 xs 是 extra small 缩写（应用于较小的屏幕，比如手机屏幕），* 是你需要填写的数字，代表在一行中,各个元素应该占的列宽。
@@ -94,6 +94,10 @@ http://www.bootcss.com/
 6. 还可以将 Bootstrap 的 col-xs-*用在 form 元素中。这样的话，我们的单选按钮就可以均匀地在页面上展开，不需要知道屏幕的分辨率有多宽
 7. class 属性叫做 well，它的作用是为设定的列创造出一种视觉上的深度感
 8. 并不是每一个 class 属性都是用于 CSS 的。 有些时候我们创建一些 class 只是为了更方便地在jQuery中选中这些元素。target class
+
+*Session* 3: jQuery
+1. $(document).ready(function() { });
+2. 引入jQuery库和Animate.css库, 让所有的按钮做弹回效果，$("button").addClass("animated bounce");
 
 
 

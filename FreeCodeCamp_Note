@@ -97,9 +97,21 @@ http://www.bootcss.com/
 
 *Session* 3: jQuery
 1. $(document).ready(function() { });
-2. 引入jQuery库和Animate.css库, 让所有的按钮做弹回效果，$("button").addClass("animated bounce");
-
-
+2. 引入jQuery库和Animate.css库, 让所有的按钮做弹回效果，$("button").addClass("animated bounce"); 括号中是两个class，addClass- add class for element
+	$(".well").addClass("animated shake")
+	$("#target3").addClass("animated fadeOut");
+	也可以分别添加class
+	$("button").addClass("animated");
+    $(".btn").addClass("shake");
+    $("#target1").addClass("btn-primary"); (bootstrap的button样式)
+	.removeClass(); 移除class
+3. $是jQuery的开头，选择器中的套路和CSS选择器是一样的，元素直接写，class前面加点，ID前加警号
+4. jQuery中的CSS，$("#target1").css("color", "red");。
+5. .prop改变属性的方法，$("button").prop("disabled", true); 把button disabled
+6. .html()方法可以添加HTML标签和文字到元素，而元素之前的内容都会被方法的内容所替换掉.
+7. 我们是通过em[emphasize]标签来重写和强调标题文本的：$("h3").html("<em>jQuery Playground</em>"); 		jQuery还有一个类似的方法叫.text()，它只能改变文本但不能修改标记。换句话说，这个方法只会把传进来的任何东西(包括标记)当成文本来显示。
+8. .remove()可以移除HTML元素
+9. appendTo()方法可以把选中的元素加到其他元素中。$("#target4").appendTo("#left-well");
 
 
 

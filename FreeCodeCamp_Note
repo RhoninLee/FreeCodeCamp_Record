@@ -3,6 +3,7 @@ FCC Record: by Rhonin Hai Li from 2018-12-02
 
 *Session* 1: HTML5 & CSS: 
 1. 标题h1，副标题h2，段落p
+	<Main></Main>节点，support搜索engine和开发者，页面的主要内容
 2. 注释<!-- -->
 3. html中改变字体颜色，在节点中添加style="color:blue"。css (<style>标签)中直接写元素种类h1，或者定义了class在元素中，在css可以用.class。xxx {color: blue;}, ID选择器#ID
 	color, 
@@ -28,10 +29,12 @@ FCC Record: by Rhonin Hai Li from 2018-12-02
 4. img 是自关闭标签，不需要结束标签，图片源用src="/images/relaxing-cat.jpg"
 5. 一个元素可以有多个class，用空格隔开class="classA classB"
 6. a元素，也叫anchor（锚点）元素<a href="address">text</a>，a元素也可以嵌套在其他元素中间，如p
-	# 为固定连接，在不确定地址的情况下
+	# 为固定连接，在不确定地址的情况下。 也可以内部链接，如href="#xxxID"直接跳转到元素
+	target="_blank"会打开一个新的tab页面
+	图片+链接<a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
 7. alt属性，也被称为alt text, 是当图片无法加载时显示的替代文本。alt属性对于盲人或视觉损伤的用户理解一幅图片中所描绘的内容非常重要，搜索引擎也会搜索alt属性。简而言之，每一张图片都应该有一个alt属性！
 8. unordered lists（无序列表）, 或带项目符号的列表<ul><li>xxx</li></ul>
-9. rdered lists（有序列表）, 或数字编号列表<ol><li>xxx</li></ol>
+9. ordered lists（有序列表）, 或数字编号列表<ol><li>xxx</li></ol>
 10. <input type="text">文本输入框，自关闭标签
 11. placeholder占位符，在input(输入)框输入任何东西之前放置在input(输入)框中的预定义文本
 12. 跟服务器交互的Web表单(form)，通过给你的form元素添加一个action属性来达到此目的,action属性的值指定了表单提交到服务器的地址, <form action="/url-where-you-want-to-submit-form-data">xxx or <xxx></xxx> </form>
@@ -40,6 +43,7 @@ FCC Record: by Rhonin Hai Li from 2018-12-02
 15. 每一个单选按钮radio都应该嵌套在它自己的label(标签)元素中，所有关联的单选按钮应该使用相同的name属性
 	<label><input type="radio" name="xxx">aaa</label>
 	checked by default：<input type="radio" name="test-name" checked>
+	<label for="abc"><input type="radio" name="xxx" id="abc"></label> label中的for表明里面是id为abc的radio button
 16. checkbox复选按钮，书写同radio。checked by default：<input type="radio" name="test-name" checked>
 17. div元素，也被称作division(层)元素，是一个盛装其他元素的通用容器。所以可以利用CSS的继承关系把div上的CSS传递给它所有子元素。
 18. id 属性应该是唯一的，虽然浏览器并不强制唯一，但基于最佳实践，这一点是被广泛认可的，所以请不要给一个以上的元素设置相同的 id 属性。
@@ -62,7 +66,11 @@ FCC Record: by Rhonin Hai Li from 2018-12-02
 25. color: pink !important; CSS中“!important”关键字拥有最高优先级
 26. 在 CSS 中，我们可以使用 6 位十六进制数字来表示颜色，每 2 位分别表示红色 (R)、绿色 (G) 和蓝色 (B) 成分rgb。例如，#000000 是黑色. 红，hex code 是 #FF0000 ，可被缩写成 #F00。也就是说，一位表示红，一位表示绿，一位表示蓝
 27. 在 CSS 中表示颜色的另一个方法是使用 rgb 值。代表黑色的 RGB 值看起来是：rgb(0, 0, 0) 白色rgb(255, 255, 255)
-
+28. HTML的声明<!DOCTYPE html> 可以加html的verison。 页面主体包在html tag中
+<html>
+  <h1>Rhonin</h1>
+</html>  
+29. 任何带有页面信息的标记都在head tag （link, meta, title, and style）中，显示给user的内容在body tag中
 
 *Session* 2: Resposive Design with Bootstrap
 http://www.bootcss.com/

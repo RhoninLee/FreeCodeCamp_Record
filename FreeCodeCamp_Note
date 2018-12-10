@@ -111,7 +111,27 @@ http://www.bootcss.com/
 6. .html()方法可以添加HTML标签和文字到元素，而元素之前的内容都会被方法的内容所替换掉.
 7. 我们是通过em[emphasize]标签来重写和强调标题文本的：$("h3").html("<em>jQuery Playground</em>"); 		jQuery还有一个类似的方法叫.text()，它只能改变文本但不能修改标记。换句话说，这个方法只会把传进来的任何东西(包括标记)当成文本来显示。
 8. .remove()可以移除HTML元素
-9. appendTo()方法可以把选中的元素加到其他元素中。$("#target4").appendTo("#left-well");
+9. appendTo()方法可以把选中的元素加到其他元素中。$("#target4").appendTo("#left-well"); 剪切
+10. clone()方法可以拷贝元素$("#target2").clone().appendTo("#right-well"); 复制
+11. 两个jQuery方法合在一起使用, 叫方法链function chaining
+12. parent()，它允许你访问指定元素的父元素。让left-well 元素的父元素parent()的背景色变成蓝色。$("#left-well").parent().css("background-color", "blue")
+13. 每个HTML元素都是 body 的子元素， 你的 "jQuery Playground" h3 元素是 <div class="container-fluid"> 的子元素。每个子元素都从父元素那里继承了一些属性
+14. children()，它允许你访问指定元素的子元素。$("#left-well").children().css("color", "blue")
+15. jQuery 用CSS选择器来选取元素，target:nth-child(n) CSS选择器允许你按照索引顺序(从1开始)选择目标元素的所有子元素。你可以给目标元素的第三个子元素添加bounce class。$(".target:nth-child(3)").addClass("animated bounce");
+16. 获取class为target且索引为奇数的所有元素，并给他们添加class。$(".target:odd").addClass("animated shake"); jQuery里的索引是从0开始的, :odd选择第2、4、6个元素，因为target#2(索引为1)，target#4(索引为3)，target6(索引为5. :even 偶数
+17. 让整个body都有淡出效果(fadeOut), $("body").addClass("animated fadeOut");, and $("body").addClass("animated hinge");
+
+
+*Session* 3: Basic Front End Development Projects
+
+
+
+
+
+
+
+
+
 
 
 

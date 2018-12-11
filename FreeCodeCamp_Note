@@ -52,7 +52,7 @@ FCC Record: by Rhonin Hai Li from 2018-12-02
 	margin is the same，还有跟其他元素的边距
 20. 每一个 HTML 页面都有一个 body 元素，默认存在.你可以像对其他 HTML 元素一样对你的 body 元素应用样式，并且所有其他元素将继承你的 body 元素的样式
 21. css优先级，body几乎作为全局的样式，优先级低，单独对元素的样式设置将覆盖body中设置的样式
-	body {
+	body { 设置全局的默认样式
 		background-color: black;
 		font-family: Monospace;
 		color: green;
@@ -64,6 +64,7 @@ FCC Record: by Rhonin Hai Li from 2018-12-02
 23. id 属性的CSS总是具有更高的优先级。
 24. 内联样式有更高的优先级<h1 style="color: green">
 25. color: pink !important; CSS中“!important”关键字拥有最高优先级
+	!important>内联>css id>css other
 26. 在 CSS 中，我们可以使用 6 位十六进制数字来表示颜色，每 2 位分别表示红色 (R)、绿色 (G) 和蓝色 (B) 成分rgb。例如，#000000 是黑色. 红，hex code 是 #FF0000 ，可被缩写成 #F00。也就是说，一位表示红，一位表示绿，一位表示蓝
 27. 在 CSS 中表示颜色的另一个方法是使用 rgb 值。代表黑色的 RGB 值看起来是：rgb(0, 0, 0) 白色rgb(255, 255, 255)
 28. HTML的声明<!DOCTYPE html> 可以加html的verison。 页面主体包在html tag中
@@ -71,6 +72,37 @@ FCC Record: by Rhonin Hai Li from 2018-12-02
   <h1>Rhonin</h1>
 </html>  
 29. 任何带有页面信息的标记都在head tag （link, meta, title, and style）中，显示给user的内容在body tag中
+30. [attribute=value]可以在css中用这种方式作为选择器，[type="radio"] { xxx: xxx; }
+31. px %, 绝对size单位，em rem是相对size单位，相对单位是根据父级的size去定的，如padding: 1.5em; 父级字体的1.5倍
+*********（需要查询em rem）
+32. css中的变量
+	.penguin {
+		/* change code below */
+		--penguin-skin: gray; 
+		--penguin-belly: white;
+		--penguin-beak: orange;
+		/* change code above */
+	}
+	.penguin-top {
+		background: var(--penguin-skin, gray); /*the gray is var fallback value*/回退的值，另外避免浏览器不支持，需要在background: var(--penguin-skin, gray);之上加上再写一个background: color value;
+	}
+33. CSS变量通常定义在:root元素中, 可以将:root元素看作是整个HTML文档的容器，就像HTML元素是body元素的容器一样。
+	:root {全局，参考body全局css
+    	--penguin-skin: gray;
+    	--penguin-belly: pink;
+    	--penguin-beak: orange;
+  	}
+34. media query ： 当media条件超出时，则执行@media中的css。如下：如果超出了350
+  @media (max-width: 350px) {
+    :root {
+*********需要查询，媒体查询      
+      /* add code below */
+      --penguin-size: 200px;
+      --penguin-skin: black;
+      /* add code above */
+      
+    }
+  }
 
 *Session* 2: Resposive Design with Bootstrap
 http://www.bootcss.com/

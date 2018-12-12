@@ -1,7 +1,8 @@
 FCC Record: by Rhonin Hai Li from 2018-12-02
+offen need to refer to the https://www.w3cschool.cn/ to research the details.
 
-
-*Session* 1: HTML5 & CSS: 
+CHS *Session* 1: HTML5 & CSS: 
+https://www.w3cschool.cn/cssref/, https://www.w3cschool.cn/htmltags/
 1. 标题h1，副标题h2，段落p
 	<Main></Main>节点，support搜索engine和开发者，页面的主要内容
 2. 注释<!-- -->
@@ -50,6 +51,7 @@ FCC Record: by Rhonin Hai Li from 2018-12-02
 19. 有三个影响HTML元素布局的重要属性：padding(内边距)、margin(外边距)、border(边框)。元素的 padding 控制元素内容 content和元素边框 border 之间的距离。元素的外边距 margin 控制元素边框 border 和元素实际所占空间的距离。margin负值，填满外空间
 	padding: 10px 20px 10px 20px; 上右下左，顺时针clockwise
 	margin is the same，还有跟其他元素的边距
+	margin: auto; 自动居中
 20. 每一个 HTML 页面都有一个 body 元素，默认存在.你可以像对其他 HTML 元素一样对你的 body 元素应用样式，并且所有其他元素将继承你的 body 元素的样式
 21. css优先级，body几乎作为全局的样式，优先级低，单独对元素的样式设置将覆盖body中设置的样式
 	body { 设置全局的默认样式
@@ -104,7 +106,8 @@ FCC Record: by Rhonin Hai Li from 2018-12-02
     }
   }
 
-*Session* 2: Resposive Design with Bootstrap
+
+CHS *Session* 2: Resposive Design with Bootstrap
 http://www.bootcss.com/
 1. Bootstrap将会根据你的屏幕的大小来调整HTML元素的大小 —— 强调 响应式设计的概念。通过响应式设计，你无需再为你的网站设计一个手机版的。它在任何尺寸的屏幕上看起来都会不错。
 你仅需要通过添加下列代码到你的HTML开头来将Bootstrap添加到任意应用中：
@@ -135,7 +138,79 @@ http://www.bootcss.com/
 7. class 属性叫做 well，它的作用是为设定的列创造出一种视觉上的深度感
 8. 并不是每一个 class 属性都是用于 CSS 的。 有些时候我们创建一些 class 只是为了更方便地在jQuery中选中这些元素。target class
 
-*Session* 3: jQuery
+
+ENU *Session* 3: Applied Visual Design
+1. text-align: 属性有justify两边对齐，center，right，left
+2. width: 宽度， height：高度
+3. css中blod加粗字体font-weight: bold;，也可以在html中加<strong></strong>tag，如把P段落中的部分字体加粗，就把用strong tag把文字包裹
+4. css中加下划线text-decoration: underline; 同样可以在html中加<u></u> u tag把文字包裹
+5. css中斜体font-style: italic; html中<em></em>
+6. css中删除线text-decoration: line-through; html中<s></s>
+7. 加分割线，<hr> tag，自关闭标签
+8. uses rgba() instead of hex codes or normal rgb()，增加了透明度，such as: background-color: rgba(45, 45, 45, 0.1)
+	rgba stands for:
+	r = red
+	g = green
+	b = blue
+	a = alpha/level of opacity
+9. ？？需要查询？？阴影效果：box-shadow，such as：box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+10. 不透明度opacity
+	A value of 1 is opaque, which isn't transparent at all.
+	A value of 0.5 is half see-through.
+	A value of 0 is completely transparent.
+11. text-transform文字变形
+	lowercase	"transform me"
+	uppercase	"TRANSFORM ME"
+	capitalize	"Transform Me"
+	initial		Use the default value
+	inherit		Use the text-transform value from the parent element
+	none		Default: Use the original text
+12. font-size: 1px; font-weight: 800;
+13. line-height: 1px; 行间距
+14. hover state，悬停光标时的状态改变，a:hover {color: red;}，a标签悬停变红
+15. 位置修改，position, 当元素的位置设置为相对时，它允许您指定CSS应该如何将其相对于页面正常流中的当前位置移动。它与left或right、top或bottom的CSS偏移量属性配对. moves the paragraph 10 pixels away from the bottom
+	p {
+		position: relative;
+		bottom: 10px;
+	}
+16. position: absolute; 绝对锁定元素相对其父级元素
+
+	summary of position：
+	absolute	生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位。元素的位置通过 "left", "top", "right"以及 "bottom" 属性进行规定。
+	fixed		生成绝对定位的元素，相对于浏览器窗口进行定位。元素的位置通过 "left", "top", "right" 以及 "bottom" 属性进行规定。（导航栏？）
+	relative	生成相对定位的元素，相对于其正常位置进行定位。因此，"left:20" 会向元素的 LEFT 位置添加 20 像素。
+	static		默认值。没有定位，元素出现在正常的流中（忽略 top, bottom, left, right 或者 z-index 声明）。
+	inherit		规定应该从父元素继承 position 属性的值
+
+	One key difference between the fixed and absolute positions is that an element with a fixed position won't move when the user scrolls。
+17. 浮动元素，float。float 属性定义元素在哪个方向浮动。以往这个属性总应用于图像，使文本围绕在图像周围，不过在 CSS 中，任何元素都可以浮动。浮动元素会生成一个块级框，而不论它本身是何种元素。如果浮动非替换元素，则要指定一个明确的宽度；否则，它们会尽可能地窄。注释：假如在一行之上只有极少的空间可供浮动元素，那么这个元素会跳至下一行，这个过程会持续到某一行拥有足够的空间为止。left	元素向左浮动。right	元素向右浮动。none	默认值。元素不浮动，并会显示在其在文本中出现的位置。inherit	规定应该从父元素继承 float 属性的值。
+被推到其包含的父元素的左边或右边，
+  #left {
+    float: left;
+    width: 50%;
+  }
+  #right {
+    float: right；
+    width: 40%;
+  }
+18. z-index，指定一个元素的堆叠顺序, 拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面。数值为整数
+19. HSL代表色相，饱和度和亮度 - 使用色彩圆柱坐标表示。HSL颜色值指定：HSL（色调，饱和度，明度）。hsl(120,65%,75%);
+https://www.w3cschool.cn/htmltags/html-colorpicker.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*Session* x: jQuery
 1. $(document).ready(function() { });
 2. 引入jQuery库和Animate.css库, 让所有的按钮做弹回效果，$("button").addClass("animated bounce"); 括号中是两个class，addClass- add class for element
 	$(".well").addClass("animated shake")
@@ -160,12 +235,6 @@ http://www.bootcss.com/
 15. jQuery 用CSS选择器来选取元素，target:nth-child(n) CSS选择器允许你按照索引顺序(从1开始)选择目标元素的所有子元素。你可以给目标元素的第三个子元素添加bounce class。$(".target:nth-child(3)").addClass("animated bounce");
 16. 获取class为target且索引为奇数的所有元素，并给他们添加class。$(".target:odd").addClass("animated shake"); jQuery里的索引是从0开始的, :odd选择第2、4、6个元素，因为target#2(索引为1)，target#4(索引为3)，target6(索引为5. :even 偶数
 17. 让整个body都有淡出效果(fadeOut), $("body").addClass("animated fadeOut");, and $("body").addClass("animated hinge");
-
-
-*Session* 3: Basic Front End Development Projects
-
-
-
 
 
 

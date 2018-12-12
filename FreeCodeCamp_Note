@@ -196,8 +196,15 @@ ENU *Session* 3: Applied Visual Design
 18. z-index，指定一个元素的堆叠顺序, 拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面。数值为整数
 19. HSL代表色相，饱和度和亮度 - 使用色彩圆柱坐标表示。HSL颜色值指定：HSL（色调，饱和度，明度）。hsl(120,65%,75%);
 https://www.w3cschool.cn/htmltags/html-colorpicker.html
-
-
+20. 渐变色，background-color: linear-gradient(90deg, red, yellow, blue);垂直竖立90°的渐变，由红向黄向蓝渐变。
+21. 条纹
+	background: repeating-linear-gradient(
+      45deg, 角度
+      blue 0px, 蓝向黄渐变
+      yellow 40px, 黄色40后直接变绿色，无渐变
+      green 0px, 绿色向黑渐变
+      black 80px 黑色80后停止，然后重复蓝色
+    );
 
 
 

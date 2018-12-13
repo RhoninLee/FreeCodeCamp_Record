@@ -205,6 +205,13 @@ https://www.w3cschool.cn/htmltags/html-colorpicker.html
       green 0px, 绿色向黑渐变
       black 80px 黑色80后停止，然后重复蓝色
     );
+22. background: url("https://i.imgur.com/MJAkxbh.png"); 背景图片，链接形式
+23. transform: scale(1.5); 缩放1.5倍
+24. 光标悬停是缩放  
+	div:hover {
+    	transform: scale(1.1);
+  	}
+25. transform: skewX(24deg); 沿水平轴倾斜。transform: skewY(24deg); 沿Y轴倾斜
 
 
 

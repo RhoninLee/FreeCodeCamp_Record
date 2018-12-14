@@ -212,7 +212,126 @@ https://www.w3cschool.cn/htmltags/html-colorpicker.html
     	transform: scale(1.1);
   	}
 25. transform: skewX(24deg); 沿水平轴倾斜。transform: skewY(24deg); 沿Y轴倾斜
-
+26. ？？？用css画图，月牙
+	<style>
+	.center
+	{
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100px;
+	height: 100px;
+	
+	background-color: transparent;
+	border-radius: 50%;
+	box-shadow: 25px 10px 0 0 blue; 
+	}
+	</style>
+	<div class="center"></div>
+27. ？？？伪元素，::before, ::after
+	画心形
+	<style>
+		.heart {
+		position: absolute;
+		margin: auto;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: pink;
+		height: 50px;
+		width: 50px;
+		transform: rotate(-45deg);
+		}
+		.heart::after {
+		background-color: pink;
+		content: "";
+		border-radius: 50%;
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		top: 0px;
+		left: 25px;
+		}
+		.heart::before {
+		content: "";
+		background-color: pink;
+		border-radius: 50%;
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		top: -25px;
+		left: 0px;
+		}
+	</style>
+	<div class = "heart"></div>                          
+28. @keyframes动画，
+	彩虹变色：
+	<style>
+	div {
+		height: 40px;
+		width: 70%;
+		background: black;
+		margin: 50px auto;
+		border-radius: 5px;
+	}
+	#rect {
+		animation-name: rainbow;
+		animation-duration: 4s;    
+	}
+	@keyframes rainbow {
+		0% {
+		background-color: blue;
+		}
+		50% {
+		background-color: green;
+		}
+		100% {
+		background-color: yellow;
+		}
+	}
+	</style>
+	<div id="rect"></div>
+29. @keyframes button变色动画
+	<style>
+	button {
+		border-radius: 5px;
+		color: white;
+		background-color: #0F5897;
+		padding: 5px 10px 8px 10px;
+	}
+	button:hover {
+		animation-name: background-color;
+		animation-duration: 500ms;
+		animation-fill-mode: forwards; //此处表示填充完颜色，不在变回初始的button颜色
+	}
+	@keyframes background-color {
+		100% {
+		background-color: #4791d0;
+		}
+	}
+	</style>
+	<button>Register</button>
+30. 动画中用推动位置方位，top，bottom等上下左右移动
+  0% {
+    background-color: blue;
+    top: 0px;
+    left: 0px;
+  }
+  50% {
+    background-color: green;
+    top: 50px;
+    left: 25px;
+  }
+  100% {
+    background-color: yellow;
+    top: 0px;
+    left: -25px;
+  }
+31. 
 
 
 

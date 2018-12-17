@@ -1,5 +1,6 @@
 FCC Record: by Rhonin Hai Li from 2018-12-02
 offen need to refer to the https://www.w3cschool.cn/ to research the details.
+download the solution from FCC, some of the web page is good for using.
 
 CHS *Session* 1: HTML5 & CSS: 
 https://www.w3cschool.cn/cssref/, https://www.w3cschool.cn/htmltags/
@@ -331,14 +332,40 @@ https://www.w3cschool.cn/htmltags/html-colorpicker.html
     top: 0px;
     left: -25px;
   }
-31. 
+31. 通过从左到右淡化元素来创建视觉方向
+	<style>
+		#ball {
+			width: 70px;
+			height: 70px;
+			margin: 50px auto;
+			position: fixed;
+			left: 20%;
+			border-radius: 50%;
+			background: linear-gradient(
+			35deg,
+			#ccffff,
+			#ffcccc
+			);
+			animation-name: fade;
+			animation-duration: 3s;
+		}
+		@keyframes fade {
+			50% {
+			left: 60%;
+			opacity: 0.1;
+			}
+		}
+		</style>
+		<div id="ball"></div>
+32. css动画循环-无限，animation-iteration-count: infinite;
+33. css动画速度，animation-timing-function: ease-in / ease-out / linear
+34. 贝塞尔曲线：animation-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
 
 
-
-
-
-
-
+ENU *Session* 3: Applied Accessibility
+1. img中添加alt属性，在无法访问时增加说明<img src="importantLogo.jpeg" alt="Company logo">
+	如果标题或img上面的其他内容已经说明img的内容，alt可以为空值
+2. 
 
 
 

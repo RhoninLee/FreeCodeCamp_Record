@@ -3,7 +3,7 @@ offen need to refer to the https://www.w3cschool.cn/ to research the details.
 download the solution from FCC, some of the web page is good for using. and one page for a solution：
 	按照几个主题分文件夹和子文件夹，其中放每个挑战的solution，每个大文件夹中放笔记
 
-CHS *Session* 1: HTML5 & CSS: 
+CHS *Session* 1: HTML5 & CSS css3: 
 https://www.w3cschool.cn/cssref/, https://www.w3cschool.cn/htmltags/
 1. 标题h1，副标题h2，段落p
 	<Main></Main>节点，support搜索engine和开发者，页面的主要内容
@@ -423,7 +423,22 @@ ENU *Session* 3: Applied Accessibility
 
 
 ENU *Session* 4: Responsive Web Design Principles
-1. 
+1. @media query, media查询，用于使用 @media 查询，你可以针对不同的媒体类型定义不同的样式。@media 可以针对不同的屏幕尺寸设置不同的样式，特别是如果你需要设置设计响应式的页面，@media 是非常有用的。当你重置浏览器大小的过程中，页面也会根据浏览器的宽度和高度重新渲染页面。
+  p {
+    font-size: 20px;
+  }
+  @media (max-height: 800px){ //当screen的高小于等于
+    p {
+        font-size: 10px;
+      }
+  }
+2. img,
+	img {
+		max-width: 100%;
+		display: block;
+		height: auto;
+	}
+3. 
 
 
 

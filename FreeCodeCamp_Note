@@ -1,6 +1,6 @@
 FCC Record: by Rhonin Hai Li from 2018-12-02
 offen need to refer to the https://www.w3cschool.cn/ to research the details.
-download the solution from FCC, some of the web page is good for using.
+download the solution from FCC, some of the web page is good for using. and one page for a solution
 
 CHS *Session* 1: HTML5 & CSS: 
 https://www.w3cschool.cn/cssref/, https://www.w3cschool.cn/htmltags/
@@ -365,7 +365,67 @@ https://www.w3cschool.cn/htmltags/html-colorpicker.html
 ENU *Session* 3: Applied Accessibility
 1. img中添加alt属性，在无法访问时增加说明<img src="importantLogo.jpeg" alt="Company logo">
 	如果标题或img上面的其他内容已经说明img的内容，alt可以为空值
-2. 
+2. heading的结构可以用subtag的结构
+	<h2>Learn the Art of Moving Stealthily
+		<h5>How to Hide in Plain Sight</h5>
+		<h5>How to Climb a Wall</h5>
+  	</h2>
+3. html5的新tag，section和article与div的区别：
+	<div> - groups content
+	<section> - groups related content
+	<article> - groups independent, self-contained content
+
+	<header>
+	<footer>
+	<nav>
+	<audio>
+	<figure>
+	<figcaption>
+	<fieldset>
+	<legend>
+	<time>
+4. audio, attr-controls代表是否有control控件
+	<audio controls>
+      <source src="https://s3.amazonaws.com/freecodecamp/screen-reader.mp3" type="audio/mpeg">
+    </audio>
+5. for属性，指定for which tag
+	<label for="email">Email:</label>
+	<input type="text" id="email" name="email">
+6. fieldset, 同一区域的控件。legend，放到radio区域上，相当于整个radio区域的header
+	<form>
+		<fieldset>
+			<legend>Choose one of these three items:</legend>
+			<input id="one" type="radio" name="items" value="one">
+			<label for="one">Choice One</label><br>
+			<input id="two" type="radio" name="items" value="two">
+			<label for="two">Choice Two</label><br>
+			<input id="three" type="radio" name="items" value="three">
+			<label for="three">Choice Three</label>
+		</fieldset>
+	</form>
+7. input type date，日期输入
+	<label for="input1">Enter a date:</label>
+	<input type="date" id="input1" name="input1">
+8. 格式化日期
+	<time datetime="2016-09-15">Thursday, September 15<sup>th</sup></time>
+9. 使用自定义CSS使元素仅对屏幕阅读器可见？？？
+	.sr-only {
+		position: absolute;
+		left: -10000px;
+		width: 1px;
+		height: 1px;
+		top: auto;
+		overflow: hidden;
+	}
+10. 属性accesskey=“”，设置热键
+11. 属性tabindex=“”，按tab键时的focus顺序
+
+
+ENU *Session* 4: Responsive Web Design Principles
+1. 
+
+
+
 
 
 

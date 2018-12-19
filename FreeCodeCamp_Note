@@ -496,8 +496,16 @@ ENU *Session* 5: CSS Flexbox
 	<div id="box-1"></div>
 	<div id="box-2"></div>
 	</div>
-3. 
-
+3. justify-content, 位置，项目位于容器的xx位置，参考w3c
+4. align-items, 对齐
+5. flex-wrap让弹性盒元素在必要的时候拆行
+6. flex-shrink
+7. flex-grow
+8. flex-basis设置元素初始值
+9. flex: flex-grow flex-shrink flex-basis|auto|initial|inherit;
+	flex: 1 0 10px; = flex-grow: 1;, flex-shrink: 0;, and flex-basis: 10px;
+10. order设置弹性盒对象元素的顺序
+11. align-self定义flex子项单独在侧轴（纵轴）方向上的对齐方式, align-self 属性可重写灵活容器的 align-items 属性
 
 
 

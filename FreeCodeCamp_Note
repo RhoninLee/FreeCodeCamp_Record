@@ -438,7 +438,67 @@ ENU *Session* 4: Responsive Web Design Principles
 		display: block;
 		height: auto;
 	}
+3. 除了px和em之外，另一种单位，相对于当前视窗
+    vw: 10vw would be 10% of the viewport's width.
+    vh: 3vh would be 3% of the viewport's height.
+    vmin: 70vmin would be 70% of the viewport's smaller dimension (height vs. width).
+    vmax: 100vmax would be 100% of the viewport's bigger dimension (height vs. width).
+	h2 {
+      width: 80vw;
+	}
+	p {
+		width: 75vmin;
+	}
+
+
+ENU *Session* 5: CSS Flexbox
+1. display: flex; 伸缩，如两个div并行显示
+	<style>
+		#box-container {
+			height: 500px;
+			display: flex;
+		}
+		#box-1 {
+			background-color: dodgerblue;
+			width: 50%;
+			height: 50%;	
+		}
+		#box-2 {
+			background-color: orangered;
+			width: 50%;
+			height: 50%;
+		}
+	</style>
+	<div id="box-container">
+	<div id="box-1"></div>
+	<div id="box-2"></div>
+	</div>
+2. flex-direction: row-reverse; 设置 <div> 元素内弹性盒元素的方向为相反的顺序。 
+	column - 垂直排列显示
+	<style>
+		#box-container {
+			display: flex;
+			height: 500px;
+			flex-direction: row-reverse;
+		}
+		#box-1 {
+			background-color: dodgerblue;
+			width: 50%;
+			height: 50%;
+		}
+		#box-2 {
+			background-color: orangered;
+			width: 50%;
+			height: 50%;
+		}
+	</style>
+	<div id="box-container">
+	<div id="box-1"></div>
+	<div id="box-2"></div>
+	</div>
 3. 
+
+
 
 
 

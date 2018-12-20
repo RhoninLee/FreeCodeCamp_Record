@@ -509,7 +509,40 @@ ENU *Session* 5: CSS Flexbox
 
 
 *Session* 6: CSS Grid
-1. 
+1. display: grid; 
+2. grid-template-columns: 100px 100px 100px; 三列表格每列100px
+3. grid-template-rows: 50px 50px; 两行表格每行50px
+4. grid-template-columns: auto 50px 10% 2fr 1fr; 自动(column的text的实际宽度)， 50px，容器的百分比宽度，可用宽度的2份，可用空间的1份
+5. grid-column-gap: 20px; 列之间的间隔宽度
+6. grid-row-gap: 20px; 行之间的间隔宽度
+7. grid-gap: 10px 20px; 快速设置间隔，第一个参数是行间隔，第二个参数是列间隔
+8. 3x3的网格，grid-column: 2/4; 将占用后两格。按line计算，3x3的网格横纵各有四条线，2/4就是占用第二到第四条线。
+9. grid-row, 同grid-column
+10. justify-self，grid中的cell的列方向对其方式，start向左，end向右，center中间
+11. align-self，grid中的cell的行方向对其方式，用法与justify-self一样，对应上，下和中间
+12. justify-items，对整个容器如grid外的div，列的整体的对齐方式，所有sub element都会继承
+13. align-items，对整个容器如grid外的div，行的整体的对齐方式，所有sub element都会继承
+14. grid布局，区域的意义
+	grid-template-areas: 
+		"header header header"
+		"advert content content"
+		"footer footer footer";
+	<grid-area-name>：在grid-area中指定的网格区域名字
+    .：一个句点表示一个空的网格单元
+    none：没有网格区域被定义
+15. grid-area给网格子项取一个名字以让它被由grid-template-areas属性创建的模板引用。同时，这个属性还可以用来更简短地表示grid-row-start+ grid-column-start + grid-row-end+ grid-column-end。
+such as: grid-area: 1/1/2/4
+16. repeat函数，重复画grid，
+	grid-template-rows: repeat(100, 50px); 重复100次画50px宽度的row
+	grid-template-columns: repeat(2, 1fr 50px) 20px; = grid-template-columns: 1fr 50px 1fr 50px 20px;
+17. minmax函数，
+	grid-template-columns: 100px minmax(50px, 200px); 两列第二列最小50 最大200
+	grid-template-columns: repeat(3, minmax(90px, 1fr)); 最小90最大1fr
+18. auto-fill，自动填充grid
+	grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)); 在minmax允许范围内自动充满容器的列
+19. auto-fit，
+	auto-fill会不断插入空行或空列，并将项目推到一边，而auto-fit会折叠这些空行或空列，并拉伸项目以适应容器的大小
+20. grid中创建grid
 
 
 

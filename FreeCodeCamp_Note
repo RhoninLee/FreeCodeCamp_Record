@@ -548,6 +548,9 @@ such as: grid-area: 1/1/2/4
 *Session*: Responsive Web Design Projects
 1. 先画图，设计好页面该是什么样子，什么位置放什么内容
 2. base在图上，进行布局并满足project的stories
+3. input type="email",h5标签可以直接验证输入框中的email格式
+4. input type="number",h5标签可以直接验证输入框中的number格式
+5. datalist, 下拉列表
 
 
 

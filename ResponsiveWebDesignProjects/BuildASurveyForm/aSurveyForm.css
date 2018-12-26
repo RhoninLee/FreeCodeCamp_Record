@@ -1,0 +1,17 @@
+body {
+    background-color: #e0ffff;
+    text-align: center;
+}
+
+#survey-frame {
+    background-color: white;
+    border-radius: 7px;
+    margin: 20px auto;
+    width: 75%;
+    height: auto;
+}
+
+#name {
+    margin: 15px auto;
+    
+}

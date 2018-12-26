@@ -1,3 +1,6 @@
+<!-- Rhonin Lee (lihaiyfy@hotmail.com) 2019-12-26 -->
+<link rel="stylesheet" type="text/css" href="aSurveyForm.css">
+
 <header>
     <h1 id="title">Console Survey</h1>
 </header>
@@ -33,5 +36,17 @@
             <input id="radio-3" type="radio" name="items" value="Never">
             <label for="radio-3">Never</label>
         </fieldset>
+        <fieldset id="check-group">
+            <legend>Which game console do you have:</legend>
+            <input id="checkbox-1" type="checkbox" name="consoles" value="PS4">
+            <label for="checkbox-1">PS4</label><br>
+            <input id="checkbox-2" type="checkbox" name="consoles" value="XBoxOneX">
+            <label for="checkbox-2">XBoxOneX</label><br>
+            <input id="checkbox-3" type="checkbox" name="consoles" value="Switch">
+            <label for="checkbox-3">Switch</label>
+        </fieldset>
+        <label for="comments" id="comments-label">Input your comments: </label>
+        <textarea id="comments" placeholder="Enter your comments"></textarea>
+        <input type="submit" id="submit" name="submit" value="Submit">
     </form>
 </div>

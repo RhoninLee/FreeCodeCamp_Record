@@ -3,15 +3,50 @@ body {
     text-align: center;
 }
 
-#survey-frame {
+#main {
     background-color: white;
     border-radius: 7px;
     margin: 20px auto;
-    width: 75%;
+    width: 60%;
     height: auto;
 }
 
-#name {
-    margin: 15px auto;
-    
+#survey-form {
+    margin: auto;
+    width: 40%;
+    text-align: left;
+}
+
+.info-div {
+    margin: 20px auto;
+}
+
+#comments-label {
+    vertical-align: top;
+}
+
+#comments {
+    width: auto;
+    height: auto;
+}
+
+#name,
+#email,
+#number {
+    width: 200px;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
+
+#radio-group,
+#check-group {
+    text-align: left;
+}
+
+#submit-div {
+    text-align: center;
 }

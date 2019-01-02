@@ -1,0 +1,23 @@
+body {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    background-color: white;
+    top: 0px;
+    z-index: 9;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+#header-img {
+    width: 100px;
+    height: 100px;
+}
+
+#info_submit {
+    top: 130px;
+}

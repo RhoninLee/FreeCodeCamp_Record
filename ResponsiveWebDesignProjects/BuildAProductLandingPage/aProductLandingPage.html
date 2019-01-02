@@ -1,7 +1,7 @@
 <!-- Rhonin Lee (lihaiyfy@hotmail.com) 2019-1-2 -->
 <link rel="stylesheet" type="text/css" href="aProductLandingPage.css">
 
-<div id="mian">
+<div id="main">
     <header id="header">
         <img id="header-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/NintendoSwitchLogo.svg/1200px-NintendoSwitchLogo.svg.png">
         <nav id="nav-bar">
@@ -14,9 +14,9 @@
 
     <div id="info_submit">
         <h2>Play anytime, anywhere, with anyone.</h2>
-        <form id="form">
-            <input id="email" type="email" placeholder="Enter your email address">
-            <button id="submit" type="submit" formtarget="_blank" formaction="https://www.freecodecamp.com/email-submit">input</button>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input id="email" type="email" name="email" placeholder="Enter your email address" required>
+            <input id="submit" type="submit">
         </form>
     </div>
 
@@ -33,22 +33,22 @@
     </div>
 
     <div id="price">
-        <div>
-            <h4>The Legend of Zelda: Breath of the Wild</h4>
+        <div class="game-div">
+            <h4>Breath of the Wild</h4>
             <a for="#game-zelda" href="https://www.freecodecamp.com/email-submit" target="_blank">
-                <img id="game-zelda" src="https://img3.doubanio.com/lpic/s29308930.jpg" alt="The Legend of Zelda: Breath of the Wild">
+                <img id="game-zelda" class="game-img" src="https://img3.doubanio.com/lpic/s29308930.jpg" alt="The Legend of Zelda: Breath of the Wild">
             </a>
         </div>
-        <div>
+        <div class="game-div">
             <h4>Super Mario Odyssey</h4>
             <a for="#game-odyssey" href="https://www.freecodecamp.com/email-submit" target="_blank">
-                <img id="game-odyssey" src="https://upload.wikimedia.org/wikipedia/zh/8/8d/Super_Mario_Odyssey.jpg" alt="Super Mario Odyssey">
+                <img id="game-odyssey" class="game-img" src="https://upload.wikimedia.org/wikipedia/zh/8/8d/Super_Mario_Odyssey.jpg" alt="Super Mario Odyssey">
             </a>
         </div>
-        <div>
+        <div class="game-div">
             <h4>Pokémon: Let's Go, Eevee</h4>
             <a for="#game-eevee" href="https://www.freecodecamp.com/email-submit" target="_blank">
-                <img id="game-eevee" src="https://yams.akamaized.net/Assets/02/078/l_p0090707802.jpg" alt="Pokémon: Let's Go, Eevee">
+                <img id="game-eevee" class="game-img" src="https://yams.akamaized.net/Assets/02/078/l_p0090707802.jpg" alt="Pokémon: Let's Go, Eevee">
             </a>
         </div>
     </div>

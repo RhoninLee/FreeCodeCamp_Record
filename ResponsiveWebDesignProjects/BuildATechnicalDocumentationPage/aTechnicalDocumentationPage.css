@@ -1,3 +1,32 @@
 code {
     display: block;
 }
+
+#main-doc {
+    display: flex;
+}
+
+.nav-frame {
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    padding: 20px;
+}
+
+#section-div {
+    margin-left: 300px;
+}
+
+#navbar {
+    position: fixed;
+}
+
+@media (max-width: 600px) {
+    .nav-frame {
+        padding: 5px;
+    }
+
+    #section-div {
+        margin-left: 250px;
+    }
+}

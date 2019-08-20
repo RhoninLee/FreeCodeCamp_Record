@@ -1,0 +1,19 @@
+/* Rhonin Lee (lihaiyfy@hotmail.com) 2019-12-21 */
+
+#main {
+    text-align: center;
+  }
+  
+  #image {
+    max-width: 100%; 
+    display: block; 
+    height: auto;
+    margin: auto;
+  }
+  
+  ul,
+  #tribute-headline {
+    max-width: 400px;
+    margin: auto;
+    text-align: left;
+  }

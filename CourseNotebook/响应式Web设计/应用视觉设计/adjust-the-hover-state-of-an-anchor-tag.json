@@ -1,0 +1,1 @@
+{"index.html":"<style>\n  a {\n    color: #000;\n  }\n  \n  a:hover {\n    color: blue;\n  }\n  \n</style>\n<a href=\"http://freecatphotoapp.com/\" target=\"_blank\">猫咪相册 App</a>"}

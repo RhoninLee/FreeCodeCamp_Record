@@ -1,0 +1,1 @@
+{"index.html":"<style>\n\n  div{ \n    border-radius: 20px;\n    width: 70%;\n    height: 400px;\n    margin: 50px auto;\n    background: linear-gradient(35deg, #CCFFFF, #FFCCCC);\n  }\n\n</style>\n\n<div></div>"}

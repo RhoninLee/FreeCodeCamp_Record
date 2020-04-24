@@ -1,0 +1,1 @@
+{"index.js":"// 初始化变量\nvar studlyCapVar;\nvar properCamelCase;\nvar titleCaseOver;\n\n// 给变量赋值\nstudlyCapVar = 10;\nproperCamelCase = \"A String\";\ntitleCaseOver = 9000;"}

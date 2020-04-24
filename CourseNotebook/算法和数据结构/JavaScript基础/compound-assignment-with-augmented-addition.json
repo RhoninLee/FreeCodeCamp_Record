@@ -1,0 +1,1 @@
+{"index.js":"var a = 3;\nvar b = 17;\nvar c = 12;\n\n// 请只修改这条注释以下的代码\n\na += 12;\nb += 9;\nc += 7;\n"}

@@ -1,0 +1,1 @@
+{"index.js":"// 示例\nvar ourStr = \"I come first. \";\nourStr += \"I come second.\";\n\n// 请把你的代码写在这条注释以下\n\nvar myStr = \"This is the first sentence. \";\nmyStr += \"This is the second sentence.\";\n"}

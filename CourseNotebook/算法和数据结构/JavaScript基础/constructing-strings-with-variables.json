@@ -1,0 +1,1 @@
+{"index.js":"// 示例\nvar ourName = \"freeCodeCamp\";\nvar ourStr = \"Hello, our name is \" + ourName + \", how are you?\";\n\n// 请把你的代码写在这条注释以下\nvar myName = \"Rhonin\";\nvar myStr = \"My name is \" + myName + \" and I am well!\";\n\n"}

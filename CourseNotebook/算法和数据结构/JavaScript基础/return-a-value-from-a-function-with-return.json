@@ -1,0 +1,1 @@
+{"index.js":"// 示例\nfunction minusSeven(num) {\n  return num - 7;\n}\n\n// 请把你的代码写在这条注释以下\nfunction timesFive(num) {\n  return num * 5;\n}\n\nconsole.log(timesFive(5));\nconsole.log(minusSeven(10));"}

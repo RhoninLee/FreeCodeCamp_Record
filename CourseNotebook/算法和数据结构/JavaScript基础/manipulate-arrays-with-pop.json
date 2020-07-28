@@ -1,0 +1,1 @@
+{"index.js":"// 示例\nvar ourArray = [1,2,3];\nvar removedFromOurArray = ourArray.pop(); \n// 经过 pop 操作之后，removedFromOurArray 的值为 3，ourArray 的值为 [1,2]\n\n// 初始化变量\nvar myArray = [[\"John\", 23], [\"cat\", 2]];\n\n// 请把你的代码写在这条注释以下\nvar removedFromMyArray;\nremovedFromMyArray = myArray.pop();\nconsole.log(removedFromMyArray);"}

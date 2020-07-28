@@ -1,0 +1,1 @@
+{"index.js":"// 示例\nfunction ourReusableFunction() {\n  console.log(\"Heyya, World\");\n}\n\nourReusableFunction();\n\n// 请把你的代码写在这条注释以下\nfunction reusableFunction() {\n    console.log(\"Hi World\");\n}\n\nreusableFunction();"}

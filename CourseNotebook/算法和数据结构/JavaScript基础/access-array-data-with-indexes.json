@@ -1,0 +1,1 @@
+{"index.js":"// 示例\nvar ourArray = [50,60,70];\nvar ourData = ourArray[0]; // 值为 50\n\n// 初始化变量\nvar myArray = [50,60,70];\n\n// 请把你的代码写在这条注释以下\nlet myData = myArray[0];"}

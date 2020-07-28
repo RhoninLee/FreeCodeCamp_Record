@@ -1,0 +1,1 @@
+{"index.js":"// 示例\nvar ourArray = [\"Stimpson\", \"J\", [\"cat\"]];\nvar removedFromOurArray = ourArray.shift();\n// removedFromOurArray now equals \"Stimpson\" and ourArray now equals [\"J\", [\"cat\"]].\n\n// 初始化变量\nvar myArray = [[\"John\", 23], [\"dog\", 3]];\n\n// 请把你的代码写在这条注释以下\nvar removedFromMyArray;\nremovedFromMyArray = myArray.shift();\n"}

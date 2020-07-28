@@ -1,0 +1,1 @@
+{"index.js":"// 示例\nvar ourArray = [\"Stimpson\", \"J\", \"cat\"];\nourArray.shift(); // 经过 shift 操作后，ourArray 的值为 [\"J\", \"cat\"]\nourArray.unshift(\"Happy\"); \n// 经过 unshift 操作后，ourArray 的值为 [\"Happy\", \"J\", \"cat\"]\n\n// 初始化变量\nvar myArray = [[\"John\", 23], [\"dog\", 3]];\nmyArray.shift();\n\n// 请把你的代码写在这条注释以下\nmyArray.unshift([\"Paul\", 35]);\n"}

@@ -1,0 +1,1 @@
+{"index.js":"function nextInLine(arr, item) {\n  // 请把你的代码写在这里\n  arr.push(item);\n  var a = arr.shift();\n  return a;  // 请修改这一行\n}\n\n// 初始化测试数据\nvar testArr = [1,2,3,4,5];\n\n// 控制台输出\nconsole.log(\"Before: \" + JSON.stringify(testArr));\nconsole.log(nextInLine(testArr, 6)); // Modify this line to test\nconsole.log(\"After: \" + JSON.stringify(testArr));"}

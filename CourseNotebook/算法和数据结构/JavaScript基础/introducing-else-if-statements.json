@@ -1,0 +1,1 @@
+{"index.js":"function testElseIf(val) {\n  if (val > 10) {\n    return \"Greater than 10\";\n  } else if (val < 5) {\n    return \"Smaller than 5\";\n  } else {\n  return \"Between 5 and 10\";\n  }\n}\n\n// 你可以修改这一行来测试你的代码\ntestElseIf(7);\n"}

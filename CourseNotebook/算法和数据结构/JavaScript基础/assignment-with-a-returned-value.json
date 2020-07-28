@@ -1,0 +1,1 @@
+{"index.js":"// 示例\nvar changed = 0;\n\nfunction change(num) {\n  return (num + 5) / 3;\n}\n\nchanged = change(10);\n\n// 初始化变量\nvar processed = 0;\n\nfunction processArg(num) {\n  return (num + 3) / 5;\n}\n\n// 请把你的代码写在这条注释以下\nprocessed = processArg(7);\n"}

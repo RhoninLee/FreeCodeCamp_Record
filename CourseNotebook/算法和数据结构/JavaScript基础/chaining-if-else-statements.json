@@ -1,0 +1,1 @@
+{"index.js":"function testSize(num) {\n  // 请把你的代码写在这条注释以下\n  if (num < 5) {\n    return \"Tiny\";\n  } else if (num < 10) {\n    return \"Small\";\n  } else if (num < 15) {\n    return \"Medium\";\n  } else if (num < 20) {\n    return \"Large\";\n  } else {\n    return \"Huge\";\n  }\n\n  // 请把你的代码写在这条注释以上\n}\n\n// 你可以修改这一行来测试你的代码\ntestSize(7);"}

@@ -1,0 +1,1 @@
+{"index.js":"function testLogicalOr(val) {\n  // 请把你的代码写在这条注释以下\n\n\n\n  if (val<10 || val>20) {\n    return \"Outside\";\n  }\n\n  // 请把你的代码写在这条注释以上\n  return \"Inside\";\n}\n\n// 你可以修改这一行来测试你的代码\ntestLogicalOr(15);"}

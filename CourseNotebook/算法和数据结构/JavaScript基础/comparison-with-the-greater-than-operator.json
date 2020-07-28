@@ -1,0 +1,1 @@
+{"index.js":"function testGreaterThan(val) {\n  if (val > 100) {  // 请修改这一行\n    return \"Over 100\";\n  }\n  \n  if (val > 10) {  // 请修改这一行\n    return \"Over 10\";\n  }\n\n  return \"10 or Under\";\n}\n\n// 你可以修改这一行来测试你的代码\ntestGreaterThan(10);"}

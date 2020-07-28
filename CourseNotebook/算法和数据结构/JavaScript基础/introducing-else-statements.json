@@ -1,0 +1,1 @@
+{"index.js":"function testElse(val) {\n  var result = \"\";\n  // 请把你的代码写在这条注释以下\n  \n  if (val > 5) {\n    result = \"Bigger than 5\";\n  } else {\n    result = \"5 or Smaller\";\n  }\n  \n  // 请把你的代码写在这条注释以上\n  return result;\n}\n\n// 你可以修改这一行来测试你的代码\ntestElse(4);\n"}

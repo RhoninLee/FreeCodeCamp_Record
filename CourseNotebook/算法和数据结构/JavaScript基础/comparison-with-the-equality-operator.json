@@ -1,0 +1,1 @@
+{"index.js":"// 初始化变量\nfunction testEqual(val) {\n  if (val==12) { // 请修改这一行\n    return \"Equal\";\n  }\n  return \"Not Equal\";\n}\n\n// 你可以修改这一行来测试你的代码\ntestEqual(10);"}
